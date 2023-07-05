@@ -1,0 +1,236 @@
+:root {
+    --primary-brand: #4d5ae5;
+    --pressedstate: #404bbf;
+    --text: #434455;
+    --dark: #2E2F42;
+    --success: #31d0aa;
+    --subtle-text: #8e8f99;
+    --accent: #e7e9fc;
+    --light: #f4f4fd;
+    --white-background: #ffffff;
+    --modal-background: #fcfcfc;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background-color: var(--white-background);
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+/* ---------------- HEADER --------------- */
+
+.header-logo {
+    color: var(--primary-brand);
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header-logo span {
+    color: var(--dark);
+}
+
+.header-menu-link {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: var(--pressedstate);
+}
+
+.header-adress {
+    font-style: normal;
+}
+
+.header-contact-link {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+    color: var(--pressedstate)
+}
+
+/* ---------------- HERO --------------- */
+
+.hero {
+    background-color: var(--dark);
+}
+.hero-title {
+    color: var(--white-background);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+.hero-btn {
+    color:  var(--white-background);
+    text-align: center;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-brand);
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--pressedstate)
+}
+
+/* ---------------- ADVANTAGES --------------- */
+
+
+.advantages-subtitle {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.advantages-item-text {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* ---------------- SERVICES --------------- */
+
+
+.services-title {
+    color:  var(--dark);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/* ---------------- TEAM --------------- */
+
+.team {
+    background-color: var(--light);
+}
+
+.team-title {
+    color: var(--dark);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.team-item {
+    background-color: var(--white-background);
+}
+
+.team-name {
+    color: var(--dark);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.team-specialty {
+    color: var(--text);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
+
+/* ---------------- FOOTER --------------- */
+
+.footer {
+    background-color: var(--dark);
+ }
+.footer-logo {
+    color: var(--primary-brand);
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+ }
+
+.footer-logo span {
+    color: var(--light);
+}
+
+.footer-text {
+    color: var(--light);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* ---------------- BUTTON --------------- */
+
+.portfolio-button {
+    color: var(--primary-brand);
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--light);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--white-background);
+    background-color: var(--pressedstate);
+    cursor: pointer;
+}
+
+
+/* ---------------- PROJECT --------------- */
+
+
+.project-title {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.project-text {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
