@@ -74,17 +74,13 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
+    justify-content: space-between;
     display: flex;
     width: 1158px;
-}
-
-.portfolio-header-container {
-    display: flex;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigation {
@@ -284,7 +280,7 @@ body {
 }
 
 
-.name-container {
+.team-container {
     padding: 32px 16px;
     text-align: center;
 }
