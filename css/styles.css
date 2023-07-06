@@ -29,6 +29,10 @@ ul {
     padding-left: 0;
 }
 
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
@@ -74,6 +78,8 @@ body {
 
 .header-container {
     display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
 }
 
 .header-navigation {
@@ -143,7 +149,7 @@ body {
 
 .hero {
     background-color: var(--dark);
-    padding: 188px 0 188px;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -182,6 +188,18 @@ body {
 
 /* ---------------- ADVANTAGES --------------- */
 
+.advantages {
+    padding-top: 120px;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantages-item {
+    width: calc((100% - 24px*3) /4);
+}
 
 .advantages-subtitle {
     color: var(--dark);
@@ -189,16 +207,21 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .advantages-item-text {
     color: var(--text);
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 /* ---------------- SERVICES --------------- */
 
+.services {
+    padding: 120px 0;
+}
 
 .services-title {
     color:  var(--dark);
@@ -208,12 +231,24 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.services-list {
+    display: flex;
+    gap: 24px;
+}
+
+.services-item {
+    width: calc((1005 - 48) /3);
 }
 
 /* ---------------- TEAM --------------- */
 
 .team {
     background-color: var(--light);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -224,10 +259,23 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-ul {
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
+    width: calc((100% - 24*3) /4);
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--white-background);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.name-container {
+    text-align: center;
 }
 
 .team-name {
@@ -237,20 +285,28 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    gap: 8px;
 }
+
 .team-specialty {
     color: var(--text);
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
     }
 
 /* ---------------- FOOTER --------------- */
 
 .footer {
     background-color: var(--dark);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
  }
+
 .footer-logo {
     color: var(--primary-brand);
     font-size: 18px;
@@ -259,6 +315,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 17px;
+    display: inline-block;
  }
 
 .footer-logo span {
@@ -266,6 +324,7 @@ body {
 }
 
 .footer-text {
+    max-width: 264px;
     color: var(--light);
     font-size: 16px;
     line-height: 1.5;
@@ -273,6 +332,16 @@ body {
 }
 
 /* ---------------- BUTTON --------------- */
+
+.button {
+    padding-top: 96px;
+}
+
+.portfolio-button-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
 
 .portfolio-button {
     color: var(--primary-brand);
@@ -282,6 +351,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: var(--light);
+    border-radius: 4px;
+    border: 1px solid var(--accent, #E7E9FC);
 }
 
 .portfolio-button:hover,
@@ -289,10 +360,37 @@ body {
     color: var(--white-background);
     background-color: var(--pressedstate);
     cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    
 }
 
 
 /* ---------------- PROJECT --------------- */
+
+.section-project {
+    padding-top: 72px;
+    padding-bottom: 120px;
+}
+
+.project-container {
+    display: flex;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.project-card-list {
+    width: calc((100% - 24*2) / 3);
+}
+
+.title-text-container {
+    border: 1px solid var(--accent, #E7E9FC);
+    background: var(--white-background, #FFF);
+    border-top: none;
 
 
 .project-title {
@@ -301,6 +399,8 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    gap: 8px;
 }
 
 .project-text {
@@ -308,6 +408,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 
 
